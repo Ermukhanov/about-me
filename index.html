@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ermukhanov M</title>
+
+<link rel="icon" type="image/jpeg" href="favicon.jpg">
+<link rel="apple-touch-icon" href="favicon.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    min-height: 70vh;
+    background: url('iconca.jpg') center / cover no-repeat;
+    background-color: #000;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.45)
+    );
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 6px;
+}
+
+/* CONTENT */
+.content {
+    max-width: 420px;
+    margin: auto;
+    padding: 30px 20px 40px;
+}
+
+.section {
+    margin-bottom: 36px;
+}
+
+.section h2 {
+    font-size: 19px;
+    margin-bottom: 14px;
+}
+
+.section p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    padding: 7px 14px;
+    background: #111;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* SOCIAL */
+.socials {
+    display: flex;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.socials a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+}
+
+.socials a:hover {
+    transform: scale(1.1);
+}
+
+.socials img {
+    width: 22px;
+    filter: invert(1);
+}
+
+/* FOOTER */
+.footer {
+    padding: 30px 20px 40px;
+}
+
+.footer-box {
+    max-width: 420px;
+    margin: auto;
+    background: #111;
+    color: #fff;
+    border-radius: 18px;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.footer-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-meta {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 6px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 18px 0;
+}
+
+.footer-socials a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.footer-socials a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+    .content,
+    .footer-box {
+        max-width: 700px;
+    }
+
+    .hero {
+        min-height: 60vh;
+        background-size: contain;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Ermukhanov M</h1>
+        <p>Web Developer • Software Engineer</p>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+    <div class="section">
+        <h2>About me</h2>
+        <p>
+            Backend, Frontend, Fullstack developer.  
+            Olympiad participant in AI and Python.  
+            Building real projects and learning modern technologies.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="tags">
+            <div class="tag">Backend</div>
+            <div class="tag">Frontend</div>
+            <div class="tag">Fullstack</div>
+            <div class="tag">Python</div>
+            <div class="tag">AI</div>
+            <div class="tag">Software Engineer</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contacts</h2>
+        <p>📞 +7 771 451 4717</p>
+
+        <div class="socials">
+            <a href="https://github.com/Ermukhanov" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/ermukhanov-m-86000a39b" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-box">
+        <div class="footer-name">Ermukhanov M</div>
+        <div class="footer-meta">15 years • KZ • Aqtobe</div>
+
+        <div class="footer-socials">
+            <a href="https://github.com/Ermukhanov" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ermukhanov-m-86000a39b" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+
+        <div class="footer-copy">
+            Made by young Zuckerberg 😄
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
